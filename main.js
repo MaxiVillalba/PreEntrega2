@@ -19,6 +19,20 @@ const destinos = [
     new Destino("Rio de Janeiro", "14 días, desayuno incluido", "Diciembre - Abril", 2500)
 ];
 
+class Adicionales {
+    constructor(tipodeadicional, preciodeadicional, cantidaddeadicional) {
+        this.tipodeadicional = tipodeadicional;
+        this.preciodeadicional = preciodeadicional;
+        this.cantidaddeadicional = cantidaddeadicional;
+    }
+}
+
+const Adicionales = [
+    new Adicionales("Seguro de viaje por persona y día", 3500),
+    new Adicionales("Alquiler de auto por día", 3300),
+    new Adicionales("Traslados internos por persona y día", 3700),
+   
+];
 function solicitarEdad() {
     return parseInt(prompt("Por favor, ingresa tu edad:"));
 }
